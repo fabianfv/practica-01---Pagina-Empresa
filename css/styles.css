@@ -1,0 +1,112 @@
+html {
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  margin: 0 auto;
+  max-width: 75vw;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+header nav.main-menu {
+  display: flex;
+  justify-content: space-between;
+  max-width: 60%;
+  margin: 2vh 0;
+}
+
+header nav.main-menu a.menu-item {
+  text-decoration: none;
+  text-align: left;
+  font-weight: Bold;
+  font-size: calc(0.5rem + 0.5vw);
+  color: #3a4875;
+}
+
+header div.gradient {
+  min-height: calc(5rem + 7vh + 7vw);
+  background: transparent linear-gradient(180deg, #38426f 0%, #71baef 100%) 0% 0% no-repeat padding-box;
+  border-radius: 1.25rem;
+  opacity: 1;
+}
+
+main figure.content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 3vh;
+}
+
+main figure.content img {
+  min-width: calc(9rem + 8vw);
+  margin-right: calc(2% + 0.5vw);
+}
+
+main figure.content figcaption h1 {
+  text-align: left;
+  font-size: calc(0.5rem + 0.5vw);
+  color: #3a4875;
+}
+
+main section.staff {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 8vh 0;
+}
+
+main section.staff figure.employee {
+  margin: 0 3vw;
+}
+
+main section.staff figure.employee img.photo {
+  min-width: 5rem;
+  max-width: 14vw;
+}
+
+main section.staff figure.employee figcaption {
+  color: #3a4875;
+  text-align: center;
+}
+
+main section.staff figure.employee figcaption h1.name {
+  font-size: calc(0.5rem + 0.5vw);
+  font-weight: Bold;
+}
+
+main section.staff figure.employee figcaption h2.job {
+  font-weight: lighter;
+  font-style: italic;
+  font-size: calc(0.4rem + 0.4vw);
+}
+
+footer {
+  background-color: #38426f;
+  text-align: center;
+  padding: 1vh 0;
+}
+
+footer h1.copyright {
+  font-size: calc(0.5rem + 0.5vw);
+  letter-spacing: 0.1rem;
+  color: #eeeeee;
+}
+
+@media screen and (max-width: 600px) {
+  main figure.content {
+    flex-direction: column;
+  }
+  main figure.content img {
+    max-width: calc(9rem + 8vw);
+    min-width: calc(9rem + 8vw);
+    margin-bottom: 2vh;
+  }
+}
